@@ -1,5 +1,5 @@
 require("@rails/ujs").start()
-require ("twitter/bootstrap")
+// require ("twitter/bootstrap")
 import 'bootstrap/dist/js/bootstrap'
 import '../scripts/custom_scripts'
 
