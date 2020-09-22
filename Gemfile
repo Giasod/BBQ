@@ -6,6 +6,7 @@ ruby '2.7.1'
 gem 'devise'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
+gem 'rails-i18n'
 gem 'twitter-bootstrap-rails'
 gem 'webpacker', '~> 4.0'
 
