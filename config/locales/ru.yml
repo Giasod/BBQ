@@ -28,6 +28,15 @@ ru:
       destroyed: 'Вы удалили событие :('
     users:
       updated: 'Вы обновили свой профиль'
+    comments:
+      destroyed: 'Комментарий удален'
+      created: 'Ваш комментарий добавлен'
+      error: 'Ошибка с комментарием'
+
+  comments:
+    comment:
+    destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+
 
   errors:
     format: "%{attribute} %{message}"
