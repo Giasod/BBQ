@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= content_for?(:title) ? yield(:title) : "BBQ" %></title>
+  <title><%= content_for?(:title) ? yield(:title) : "Ситком" %></title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_pack_tag "application", :media => "all" %>
@@ -24,7 +24,7 @@
 <body class="bg-light" style="font-family: 'Alegreya', serif">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-2">
-  <%= link_to 'BBQ!', root_path, class: 'navbar-brand' %>
+  <%= link_to 'Ситком про К.Д.', root_path, class: 'navbar-brand' %>
   <ul class="navbar-nav ml-auto mr-5">
     <% if user_signed_in? %>
       <li><%= link_to 'Профиль', current_user, class: 'mr-2 mb-1 btn btn-info' %></li>
@@ -49,8 +49,10 @@
   </div>
 </div>
 
-<footer class="fixed-bottom card-footer text-light bg-dark">
-  <p>&copy; Amiran Tsiklauri 2020</p>
+<footer class="fixed-bottom text-light bg-dark">
+  <div class="container text-center">
+    <span>&copy; Amiran Tsiklauri 2020</span>
+  </div>
 </footer>
 </body>
 </html>
