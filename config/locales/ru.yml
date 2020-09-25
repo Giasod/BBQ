@@ -14,11 +14,20 @@ ru:
         password: 'Пароль'
         current_password: 'Текущий пароль'
         password_confirmation: 'Подтверждение пароля'
+
       event:
         title: 'Название'
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+
+      comment:
+        body: 'Комментарий'
+        user_name: 'Имя пользователя'
+
+      subscription:
+        user_name: 'Имя пользователя'
+        user_email: 'Почта'
 
   # Перевод сообщений, которые отправляет контроллер
   controllers:
@@ -107,3 +116,5 @@ ru:
     change: Изменить
     destroy_event_button: Удалить событие
     destroy_event: Вы точно хотите удалить событие?
+    send: Отправить
+    subscribe: Подписаться
