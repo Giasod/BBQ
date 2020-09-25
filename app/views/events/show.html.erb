@@ -45,20 +45,26 @@
     </div>
     <div class="event-subscriptions">
       <h4>Пойдут:</h4>
-      <div>
-        <p>
-          <%= render partial: 'subscriptions/subscription',
-                     collection: @event.subscriptions.except(@new_subscription) %>
-        </p>
-      </div>
+      <% if @event.subscribers.empty? %>
+        <p>Пока никто не идёт :(</p>
+      <% else %>
+        <div>
+          <p>
+            <%= render partial: 'subscriptions/subscription',
+                       collection: @event.subscriptions.except(@new_subscription) %>
+          </p>
+        </div>
+      <% end %>
     </div>
+    <% unless current_user == @event.user %>
     <div class="event-subscription-form">
-      <h4>Я пойду:</h4>
+      <h4>Я пойду!</h4>
       <div>
         <%= render partial: 'subscriptions/form', locals: {
             subscription: @new_subscription || @event.subscriptions.build
         } %>
       </div>
     </div>
+      <% end %>
   </div>
 </div>

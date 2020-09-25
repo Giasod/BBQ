@@ -54,6 +54,7 @@ ru:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
 
+  no_self_subscription: 'Вы не можете подписаться на своё же событие'
 
   errors:
     format: "%{attribute} %{message}"
