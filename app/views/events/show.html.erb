@@ -27,9 +27,16 @@
 
 <div class="row">
   <div class="col-md-8">
+    <div class="event-photo-form">
+      <div class="event-photos-gallery">
+        <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
+      </div>
+
+      <%= render partial: 'photos/form', locals: { photo: @new_photo || @event.photos.build } %>
+    </div>
     <div class="event-comments buffer-top">
       <%= render partial: 'comments/form',
-                 locals: {comment: @new_comment || @event.comments.build} %>
+                 locals: { comment: @new_comment || @event.comments.build } %>
 
       <div class="buffer-both">
         <%= render partial: 'comments/comment',

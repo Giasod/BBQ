@@ -7,6 +7,7 @@ ru:
       event: 'Событие'
       subscription: 'Подписка'
       comment: 'Комментарий'
+      photo: 'Фото'
 
     # Перевод названий аттрибутов моделей
     attributes:
@@ -17,6 +18,9 @@ ru:
         password: 'Пароль'
         current_password: 'Текущий пароль'
         password_confirmation: 'Подтверждение пароля'
+
+      photo:
+        photo: 'Фотография'
 
       event:
         title: 'Название'
@@ -48,6 +52,10 @@ ru:
       created: 'Вы подписаны на это событие'
       destroyed: 'Участник отписан'
       error: 'Подписка/отписка не сработала'
+    photos:
+      error: 'Что-то не так с фотографией'
+      created: 'Вы добавили фотографию к событию'
+      destroyed: 'Вы удалили фотографию'
 
   comments:
     comment:
