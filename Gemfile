@@ -3,11 +3,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
+gem 'carrierwave'
 gem 'devise'
 gem 'devise-i18n'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'rails-i18n'
+gem 'rmagick'
 gem 'twitter-bootstrap-rails'
 gem 'webpacker', '~> 4.0'
 

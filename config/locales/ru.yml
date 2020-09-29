@@ -13,6 +13,7 @@ ru:
       user:
         email: 'Почта'
         name: 'Имя'
+        avatar: 'Аватар'
         password: 'Пароль'
         current_password: 'Текущий пароль'
         password_confirmation: 'Подтверждение пароля'
