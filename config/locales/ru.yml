@@ -60,7 +60,7 @@ ru:
 
   comments:
     comment:
-    destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
+      destroy_confirm: 'Вы уверены, что хотите удалить этот комментарий?'
 
   subscriptions:
     subscription:
@@ -73,6 +73,7 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
+      subject: 'Новый комментарий'
     subscription:
       title: 'Новая подписка'
       name: 'Имя'
@@ -81,6 +82,16 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
+      subject: 'Новая подписка'
+    photo:
+      title: 'Новое фото'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+      subject: 'Новое фото'
 
   no_self_subscription: 'Вы не можете подписаться на своё же событие'
 
