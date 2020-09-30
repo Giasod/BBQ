@@ -16,6 +16,7 @@ gem 'webpacker', '~> 4.0'
 
 group :development do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'letter_opener'
   gem 'listen', '~> 3.2'
   gem 'sqlite3', '~> 1.4'
 end
