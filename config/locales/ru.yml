@@ -12,10 +12,11 @@ ru:
     # Перевод названий аттрибутов моделей
     attributes:
       user:
-        email: 'Почта'
+        email: 'Email'
         name: 'Имя'
         avatar: 'Аватар'
         password: 'Пароль'
+        new_password: 'Новый пароль'
         current_password: 'Текущий пароль'
         password_confirmation: 'Подтверждение пароля'
 
@@ -64,6 +65,22 @@ ru:
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+
+  event_mailer:
+    comment:
+      title: 'Новый комментарий'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
+    subscription:
+      title: 'Новая подписка'
+      name: 'Имя'
+      email: 'Email'
+      author: 'Автор'
+      event: 'Событие'
+      datetime: 'Состоится'
+      owner: 'Организатор'
 
   no_self_subscription: 'Вы не можете подписаться на своё же событие'
 
@@ -125,6 +142,7 @@ ru:
     back: Вернуться
     deletion_confirmation: Вы точно хотите удалить аккаунт?
     password_reset: Восстановить пароль
+    change_password: Сменить пароль
     change: Изменить
     destroy_event_button: Удалить событие
     destroy_event: Вы точно хотите удалить событие?
