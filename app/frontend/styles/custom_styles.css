@@ -42,8 +42,12 @@
 
 .image-for-bg {
   /*background-image: url("../images/event.jpg");*/
-  background-image: url("~images/event.jpg");
+  background-image: url("~images/tusovka.png");
   background-size: 100% auto;
+}
+
+.nice-bg-color {
+  background-color: #e7e7e7;
 }
 
 .user-avatar .img-icon {
