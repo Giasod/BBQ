@@ -28,6 +28,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пин-код'
 
       comment:
         body: 'Комментарий'
@@ -43,6 +44,7 @@ ru:
       created: 'Вы создали новое событие'
       updated: 'Вы обновили событие'
       destroyed: 'Вы удалили событие :('
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили свой профиль'
     comments:
