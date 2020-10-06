@@ -3,6 +3,7 @@ require("@rails/ujs").start()
 import 'bootstrap/dist/js/bootstrap'
 import '../scripts/custom_scripts'
 import '../scripts/map'
+import 'lightbox2/dist/js/lightbox'
 
 import '../styles/application'
 
