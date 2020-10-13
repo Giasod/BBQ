@@ -19,6 +19,7 @@ group :development do
   gem 'letter_opener'
   gem 'listen', '~> 3.2'
   gem 'sqlite3', '~> 1.4'
+  gem 'dotenv-rails'
 end
 
 group :production do
