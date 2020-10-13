@@ -3,10 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.1'
 
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 gem 'carrierwave'
 gem 'devise'
 gem 'devise-i18n'
-gem 'dotenv-rails'
 gem 'fog-aws'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
