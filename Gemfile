@@ -6,6 +6,7 @@ ruby '2.7.1'
 gem 'carrierwave'
 gem 'devise'
 gem 'devise-i18n'
+gem 'dotenv-rails'
 gem 'fog-aws'
 gem 'puma', '~> 4.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
@@ -19,7 +20,6 @@ group :development do
   gem 'letter_opener'
   gem 'listen', '~> 3.2'
   gem 'sqlite3', '~> 1.4'
-  gem 'dotenv-rails'
 end
 
 group :production do
