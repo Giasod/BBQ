@@ -107,7 +107,7 @@ Rails.application.configure do
   
   # Базовый URL сайта для правильных ссылок в письмах
   # ПРОПИСЫВАЙТЕ свой!
-  config.action_mailer.default_url_options = {host: 'sitkom.herokuapp.com'}
+  config.action_mailer.default_url_options = {host: 'sitkompro.ru'}
 
   # Ошибки рассылки юзеру не показываем
   config.action_mailer.raise_delivery_errors = false
@@ -123,9 +123,9 @@ Rails.application.configure do
       :address        => 'smtp.sendgrid.net',
       :port           => '587',
       :authentication => :plain,
-      :user_name      => ENV['SENDGRID_USERNAME'],
+      :user_name      => apikey,
       :password       => ENV['SENDGRID_PASSWORD'],
-      :domain         => 'heroku.com',
+      :domain         => 'sitkompro.ru',
       :enable_starttls_auto => true
   }
 end
