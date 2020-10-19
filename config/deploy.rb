@@ -1,6 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.1"
 
+Rake::Task["deploy:assets:backup_manifest"].clear_actions
+
 set :application, "sitkom"
 set :repo_url, "https://github.com/Giasod/BBQ"
 
@@ -21,10 +23,10 @@ set :deploy_to, "/home/deploy/www"
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, "config/database.yml"
+append :linked_files, 'config/database.yml', 'config/secrets.yml'
 
 # Default value for linked_dirs is []
-append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
