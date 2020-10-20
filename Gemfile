@@ -9,6 +9,7 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'fog-aws'
 gem 'puma', '~> 4.1'
+gem 'pundit'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'rails-i18n'
 gem 'rmagick', '~> 4.1.2'
@@ -27,6 +28,10 @@ group :development do
   gem 'capistrano-passenger', '~> 0.2'
   gem 'capistrano-rvm', '~> 0.1.2'
   gem 'capistrano-bundler', '~> 2.0.1'
+
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
 end
 
 group :production do
