@@ -1,24 +1,26 @@
-# README
+# Добро пожаловать в Ситком про Канатчикову Дачу!
+Это приложение, которое я сделал в рамках обучения на курсе
+ [Хороший Программист](https://goodprogrammer.ru/). Горжусь невероятно, надо признаться.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Приложение написано на версии Ruby 2.7.1 и Rails 6.0.3.3.
 
-Things you may want to cover:
+## В чём суть
+Это приложение-агрегатор друзей для тусовок, вечеринок, шашлыков — кто как хочет.
+Пользователи могут регистрироваться, загружать фотографии, создавать новые события, 
+подписываться на события других пользователей, оставлять комментарии, удалять свой профиль,
+в общем, полный набор.
 
-* Ruby version
+Впрочем, проще самим [посмотреть](sitkompro.ru), верно? :)
 
-* System dependencies
+## На чём работает
+Вся красота сделана на `Bootstrap 4`
 
-* Configuration
+`Devise` помогает с регистрацией и паролями
 
-* Database creation
+`Pundit` разруливает вопросы авторизации
 
-* Database initialization
+`Carrierwave`, `rmagick` и `fog-aws` позволяют насладиться фоточками
 
-* How to run the test suite
+За отправку почты поблагодарим `sengrid-rails`
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ну и за русскую локализацию `rails-i18n`
