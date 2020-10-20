@@ -3,6 +3,10 @@ class EventPolicy < ApplicationPolicy
     true
   end
 
+  def index?
+    true
+  end
+
   def create?
     user.present?
   end
@@ -12,11 +16,11 @@ class EventPolicy < ApplicationPolicy
   end
 
   def update?
-    user_is_owner?(record)
+    edit?
   end
 
   def destroy?
-    user_is_owner?(record)
+    edit?
   end
   
   class Scope < Scope
