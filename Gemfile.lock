@@ -104,11 +104,6 @@ GEM
     erubi (1.9.0)
     excon (0.76.0)
     execjs (2.7.0)
-    factory_girl (4.9.0)
-      activesupport (>= 3.0.0)
-    factory_girl_rails (4.9.0)
-      factory_girl (~> 4.9.0)
-      railties (>= 3.0.0)
     ffi (1.13.1)
     fog-aws (3.6.7)
       fog-core (~> 2.1)
@@ -289,7 +284,6 @@ DEPENDENCIES
   devise
   devise-i18n
   dotenv-rails
-  factory_girl_rails
   fog-aws
   letter_opener
   listen (~> 3.2)
