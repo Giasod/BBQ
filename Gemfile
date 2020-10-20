@@ -30,7 +30,6 @@ group :development do
   gem 'capistrano-bundler', '~> 2.0.1'
 
   gem 'rspec-rails'
-  gem 'shoulda-matchers'
 end
 
 group :production do

@@ -22,6 +22,7 @@ ru:
 
       photo:
         photo: 'Фотография'
+        user: 'Пользователь'
 
       event:
         title: 'Название'
@@ -100,6 +101,8 @@ ru:
       subject: 'Новое фото'
 
   no_self_subscription: 'Вы не можете подписаться на своё же событие'
+  pundit:
+    not_authorized: 'Вам нельзя это делать!'
 
   errors:
     format: "%{attribute} %{message}"
