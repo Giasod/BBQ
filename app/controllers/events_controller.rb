@@ -5,6 +5,7 @@ class EventsController < ApplicationController
   before_action :password_guard!, only: [:show]
 
   after_action :verify_authorized, only: %i[show edit update destroy]
+  after_action :verify_policy_scoped, only: :index
   def index
     @events = policy_scope(Event)
   end
@@ -17,8 +18,8 @@ class EventsController < ApplicationController
   end
 
   def new
-    authorize @event
     @event = current_user.events.build
+    authorize @event
   end
 
   def edit

@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe EventPolicy, type: :policy do
-  let(:bob) { User.new }
-  let(:mark) { User.new }
-  let(:event) { Event.new(user:mark) }
+  let(:bob) { create(:user) }
+  let(:mark) { create(:user) }
+  let(:event) { create(:event, user: mark) }
   
   subject { described_class }
   

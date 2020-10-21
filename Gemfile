@@ -17,7 +17,7 @@ gem 'sendgrid-ruby'
 gem 'twitter-bootstrap-rails'
 gem 'webpacker', '~> 4.0'
 
-group :development do
+group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'letter_opener'
   gem 'listen', '~> 3.2'
@@ -30,6 +30,8 @@ group :development do
   gem 'capistrano-bundler', '~> 2.0.1'
 
   gem 'rspec-rails'
+  gem 'factory_bot_rails'
+  gem 'shoulda-matchers'
 end
 
 group :production do
