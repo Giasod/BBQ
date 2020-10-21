@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 
 Rake::Task["deploy:assets:backup_manifest"].clear_actions
 
-set :application, "sitkom"
+set :application, "www"
 set :repo_url, "https://github.com/Giasod/BBQ"
 
 # Default branch is :master
