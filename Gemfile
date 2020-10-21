@@ -13,7 +13,6 @@ gem 'pundit'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 gem 'rails-i18n'
 gem 'rmagick', '~> 4.1.2'
-gem 'sendgrid-ruby'
 gem 'twitter-bootstrap-rails'
 gem 'webpacker', '~> 4.0'
 
