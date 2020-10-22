@@ -18,3 +18,12 @@
 * `SendGrid API` отсылает почту 
 * `Rails-i18n` локализация
 
+## Как установить и запустить на локальном сервере
+```
+git clone git@github.com:Giasod/BBQ.git
+cd ./BBQ
+bundle install
+bundle exec rails db:migrate
+bundle exec rails s
+```
+
