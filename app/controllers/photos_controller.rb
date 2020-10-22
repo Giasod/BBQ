@@ -49,7 +49,7 @@ class PhotosController < ApplicationController
     # Как и в подписках, берём EventMailer и его метод comment с параметрами
     # И отсылаем в том же потоке
     all_emails.each do |mail|
-      EventMailer.photo(event, photo, mail).deliver_now
+      EventMailer.photo(event, photo, mail).deliver_later
     end
   end
 end

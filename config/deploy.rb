@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 
 Rake::Task["deploy:assets:backup_manifest"].clear_actions
 
-set :application, "www"
+set :application, "sitkom"
 set :repo_url, "https://github.com/Giasod/BBQ"
 
 # Default branch is :master
@@ -27,6 +27,8 @@ append :linked_files, 'config/database.yml', 'config/secrets.yml', '.env', 'send
 
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads'
+
+after 'deploy:restart', 'resque:restart'
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
