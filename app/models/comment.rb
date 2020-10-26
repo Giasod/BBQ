@@ -7,6 +7,8 @@ class Comment < ApplicationRecord
 
   validates :user_name, presence: true, unless: -> { user.present? }
 
+  default_scope { order('created_at DESC') }
+  
   def user_name
     if user.present?
       user.name

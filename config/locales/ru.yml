@@ -29,7 +29,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
-        pincode: 'Пин-код'
+        pincode: 'Пароль'
 
       comment:
         body: 'Комментарий'
