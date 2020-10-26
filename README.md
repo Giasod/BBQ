@@ -24,9 +24,7 @@
 git clone git@github.com:Giasod/BBQ.git
 cd ./BBQ
 bundle install
-```
-Теперь переименуйте файл `config/database.yml.example`  в `config/database.yml`
-```
+cp config/database.yml.example config/database.yml
 yarn install --check-files 
 bundle exec rails db:migrate
 bundle exec rails s
