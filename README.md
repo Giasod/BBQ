@@ -23,23 +23,8 @@
 ```
 git clone git@github.com:Giasod/BBQ.git
 cd ./BBQ
-bundle install
-cp config/database.yml.example config/database.yml
-yarn install --check-files 
-bundle exec rails db:migrate
-bundle exec rails s
+bin/setup
 ```
-Вуаля, вы восхитительны!
+Не забудьте заменить фейковые переменные в `.env` на ваши
 
-Если хотите воспользоваться AWS, то придётся прописать свои ключи в файле `.env`
-```
-S3_ACCESS_KEY='your access key'
-S3_SECRET_KEY='your secret key'
-S3_BUCKET_REGION='your region'
-```
-Аналогично для почты по `SendGrid API` тоже в `.env`:
-```
-SENDGRID_USERNAME='apikey' # это стандартный юзер нейм у сендгрида
-SENDGRID_API_KEY='your api_key'
-SENDGRID_DOMAIN='your domain'
-```
+Вуаля, вы восхитительны!
