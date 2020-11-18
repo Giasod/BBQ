@@ -169,3 +169,4 @@ ru:
     send: Отправить
     subscribe: Подписаться
     delete_photo: Удалить фото?
+    sign_in_with: "Войти с помощью %{provider}"
