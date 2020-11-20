@@ -22,6 +22,7 @@ class User < ApplicationRecord
 
   def self.find_for_oauth(access_token)
     # Достаём email из токена
+    name = access_token.info.name
     email = access_token.info.email
     user = where(email: email).first
     
@@ -47,6 +48,7 @@ class User < ApplicationRecord
     # Если есть, то вернётся, если нет, то будет создана новая
     where(url: url, provider: provider).first_or_create! do |user|
       # Если создаём новую запись, прописываем email и пароль
+      user.name = name
       user.email = email
       user.remote_avatar_url = avatar
       user.password = Devise.friendly_token.first(16)
