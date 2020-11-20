@@ -39,7 +39,7 @@ class User < ApplicationRecord
       avatar = access_token.info.image.gsub('http', 'https')
     when 'vkontakte'
       url = "https://vk.com/#{id}"
-      avatar = access_token.extra.raw_info.photo.gsub('http', 'https')
+      avatar = access_token.extra.raw_info.photo_200
     end
   
   
